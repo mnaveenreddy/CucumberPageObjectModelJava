@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="9771" started-at="2018-10-23T14:51:41Z" finished-at="2018-10-23T14:51:51Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.gamesys.suiterunner.SuiteRunner@548b7f67]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="9771" started-at="2018-10-23T14:51:41Z" finished-at="2018-10-23T14:51:51Z">
+      <class name="com.gamesys.suiterunner.SuiteRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.gamesys.suiterunner.SuiteRunner@548b7f67]" name="setUpClass" is-config="true" duration-ms="228" started-at="2018-10-23T15:51:41Z" finished-at="2018-10-23T15:51:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.gamesys.suiterunner.SuiteRunner@548b7f67]" name="feature" duration-ms="6400" started-at="2018-10-23T15:51:41Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-10-23T15:51:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.gamesys.suiterunner.SuiteRunner@548b7f67]" name="feature" duration-ms="2783" started-at="2018-10-23T15:51:48Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-10-23T15:51:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Registration]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.gamesys.suiterunner.SuiteRunner@548b7f67]" name="tearDownClass" is-config="true" duration-ms="286" started-at="2018-10-23T15:51:50Z" finished-at="2018-10-23T15:51:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.gamesys.suiterunner.SuiteRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
