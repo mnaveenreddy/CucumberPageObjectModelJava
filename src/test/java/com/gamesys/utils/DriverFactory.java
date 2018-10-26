@@ -25,46 +25,11 @@ public class DriverFactory {
 
     public WebDriver getDriver() {
         try {
-            // Read Config
-//            ReadConfigFile file = new ReadConfigFile();
-//            String browserName = file.getBrowser();
             properties = new Properties();
             configfile = new FileInputStream(System.getProperty("user.dir") + "/src/test/java/com/gamesys/utils/Config.properties");
             properties.load(configfile);
             String browserName=properties.getProperty("browserName");
 
-//            switch (browserName) {
-//
-//                case "firefox":
-//                    // code
-//                    if (null == driver) {
-//                       // System.setProperty("webdriver.gecko.driver", Constant.GECKO_DRIVER_DIRECTORY);
-//                        DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-//                        capabilities.setCapability("marionette", true);
-//                        driver = new FirefoxDriver();
-//                    }
-//                    break;
-//
-//                case "chrome":
-//                    // code
-//                    if (null == driver) {
-//                       System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/test/java/com/gamesys/drivers/chromedriver");
-//                        driver = new ChromeDriver();
-//                        driver.manage().window().maximize();
-//                    }
-//                    break;
-//
-//                case "ie":
-//                    // code
-//                    if (null == driver) {
-//                        DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
-//                        //System.setProperty("webdriver.ie.driver", Constant.IE_DRIVER_DIRECTORY);
-//                        capabilities.setCapability("ignoreZoomSetting", true);
-//                        driver = new InternetExplorerDriver(capabilities);
-//                        driver.manage().window().maximize();
-//                    }
-//                    break;
-//            }
             if(browserName.equalsIgnoreCase("chrome")){
                 if (null == driver) {
                       System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/test/java/com/gamesys/drivers/chromedriver");
